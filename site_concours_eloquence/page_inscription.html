@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>USPN Concours d'éloquence - Formulaire inscription</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="css/site_eloquence.css"/>
+	</head>
+	<body>
+		<!==============TITRE_SITE==============>
+		<header>
+			<h1 id="banner">
+				<a href="https://www.univ-paris13.fr"><img height=60 src="./assets/logo_uspn.png" alt="Logo USPN"/></a>
+				Concours d'éloquence à l'USPN
+				<span>
+					<a href="page_inscription.html"><img height=30 src="./assets/flag_fr.jpg" alt="Langue Français"/></a>
+					<a href="page_inscription_en.html"><img height=30 src="./assets/flag_en.png" alt="Langue Anglais"/></a>
+				</span>
+			</h1>
+		</header>
+			
+		<!==============MENU_NAVIGATION==============>
+		<nav id="liens_page">
+			<a href="page_accueil.html">Accueil</a>
+			<a href="page_description.html">Concours d'éloquence</a>
+			<a href="page_old_concours.html">Concours précédent</a>
+			<a href="page_new_concours.html">Concours à venir</a>
+			<a id="page_actuel" href="page_inscription.html">Inscription</a>
+			<a href="page_equipe.html">A propos de nous</a>
+		</nav>
+		
+		<div class="bloc_texte" id="fond_milieu">
+			
+			<!==============CORPS_SITE==============>
+			<article>
+				<h1>Formulaire d'inscription au concours du 17 juin 2022</h1>
+				
+				<p>
+					Vous êtes libre de venir assister à la journée d'éloquence en tant que spectateur.<br><br>
+
+					Si vous souhaitez participer au concours en tant que candidat, veuillez remplir à ce formulaire <b>avant le 12 juin 2022</b>.<br><br>
+
+					Le sujet sera révélé au public après cette date sur le site et par mail pour les candidats.
+				</p>
+			</article>
+			<!==============FORMULAIRE==============>
+			<form class="bloc_texte">
+				<fieldset>
+					<legend>Identité</legend>
+					<p>
+						<label for="nom">Votre nom : </label><br>
+						<input id="nom" type="text" name="nom" placeholder="Exemple: Marangnier" required/><br><br>
+
+						<label for="prenom">Votre prénom : </label><br>
+						<input id="prenom" type="text" name="nom" placeholder="Exemple: Julien" required/><br><br>
+
+						<label for="email">Votre adresse Email : </label><br>
+						<input id="email" type="email" placeholder="Ex: candidat.eloquence@gmail.com" required/><br><br>
+
+						<label for="tel">Votre numéro de téléphone : </label><br>
+						<input type="tel" />
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Etudes</legend>
+					<p>
+						<label for="desc_alrg">Votre formation suivie actuellement à l'USPN :</label><br>
+						<input type="text" name="desc_alrg" id="desc_alrg" placeholder="Ex: BUT Info, Licence, Master..."/><br><br>
+					</p>
+				</fieldset>
+				<p id="submit">
+					<input type="submit" value="Valider"/>
+				</p>
+			</form>
+		</div>
+		<div class="footer-basic">
+			<footer>
+				<div class="social"><a href="https://www.instagram.com/univ_sorbonneparisnord/?hl=fr#"><i class="icon ion-social-instagram"></i></a> <a href="https://www.linkedin.com/school/universit-paris-13-nord/"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/IUTVilletaneuse"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/univsorbonneparisnord"><i class="icon ion-social-facebook"></i></a></div>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="page_accueil.html">Acceuil</a></li>
+					<li class="list-inline-item"><a href="page_description.html">Concours d'éloquence</a></li>
+					<li class="list-inline-item"><a href="page_old_concours.html">Concours précédent</a></li>
+					<li class="list-inline-item"><a href="page_new_concours.html">Concours à venir</a></li>
+					<li class="list-inline-item"><a href="page_inscription.html">Inscription</a></li>
+					<li class="list-inline-item"><a href="page_equipe.html">A propos de nous</a></li>
+				</ul>
+				<p class="copyright">Les Cygnes © 2022</p>
+			</footer>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>	
+	</body>
+</html>

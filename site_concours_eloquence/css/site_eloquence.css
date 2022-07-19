@@ -1,0 +1,539 @@
+body {
+	text-align: justify;
+	font-family: system-ui, Arial; /*ou arial mais un peu vieux*/
+	margin: 0px;
+	
+	/*Fond arrière plan*/
+	background-image: url('../assets/fond.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+
+img {
+	border-radius: 10px; /*coin arrondi*/
+}
+
+h1,h2,h3 {
+	text-align: center;
+	/*test*/
+	font-weight: normal;
+	background-color: #012063;
+	color: white;
+	
+	padding: .25em;
+	/*
+	margin-top: 0;
+	margin-bottom: 0;
+	*/
+	border-radius: 10px; /*coin arrondi*/
+}
+
+.diapo {
+	padding: 2em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*=========================================================/
+/					CONTENU CORPS SITE
+/=========================================================*/
+
+/*=======ACCUEIL=============*/
+
+#contain_video_home{
+	background-color: white;
+	margin-bottom: 0;
+}
+
+#video_accueil{
+	max-width: 100%;
+	width: 100%;
+ 	height: 100%;
+  	object-fit: cover;
+}
+
+#test_texte{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.article_accueil {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.article_accueil img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.texte_droite {
+	width: 55%; /*devoir adapter selon partie ? image taille différente*/
+	padding-left: 1%;
+}
+
+.texte_gauche {
+	width: 60%;
+	padding-right: 1%;
+}
+
+/*Bouton Lien, utilisé page accueil*/
+
+.lien_home a{
+	padding: .25em;
+	width: max-content; /*taille contour bleu s'adapte longueur texte lien*/
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+
+	color:white;
+	background-color: #4293f5;
+}
+
+/*Chang. couleur quand souris dessus*/
+.lien_home a:hover {
+	background-color: #245691;
+}
+
+/*=========AUTRES PAGES==========*/
+
+/*Texte en bloc au centre de la page*/
+.bloc_texte_para,
+.bloc_texte article p,
+.bloc_texte fieldset, 
+.bloc_texte article h1,
+#submit{
+	width: 85%;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*Alignement centre page*/
+#fond_milieu {
+	width: 65%;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: auto;
+	padding: 2em;
+	background-color: white;
+}
+
+#bienvenue {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-top: 0;
+	color: white;
+	background-color: #4293f5;
+	border-radius: 20px; /*coin arrondi*/
+}
+/*=========DESCRIPTION==========*/
+
+/*tentative points positifs*/
+#avantages{
+	display: flex;
+	justify-content: space-around;
+	color:white;
+	background-color: #4293f5;
+	border-radius: 10px; /*coin arrondi*/
+}
+
+#avantages h2{
+	background-color: #4293f5;
+}
+
+#avantages div p{
+	width: 90%;
+}
+
+#avantage1{
+	width: 33%;
+	border-right: 6px solid white;
+}
+
+#avantage2{
+	width: 33%;
+}
+
+#avantage3{
+	width: 33%;
+	border-left: 6px solid white;
+}
+
+/*=========OLD CONCOURS==========*/
+
+/*galerie d'images*/
+
+.cadre-diapo img{
+	max-width: 75%;
+}
+
+/*Les participants*/
+
+/*y'a des titres qui sont en taille petite jsp pourquoi*/
+.bug_h1{
+	font-size: 24px;
+	margin-top: 19.92px;
+	margin-bottom: 19.92px;
+}
+
+.all_candidat {
+	max-width: 100%; /*MARCHE TRES BIEN: adapte à la taille de la page*/
+}
+
+#nom_particip{
+	display: flex;
+	justify-content: space-around;
+}
+
+#nom_particip div{
+	width: 75%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+
+	color: white;
+	background-color: #4293f5;
+	border: 1px solid white; /*à changer maybe*/
+}
+
+#nom_particip div:hover { 
+	background-color: #245691;
+}
+
+/*Leur profil*/
+
+.profil{
+	width: 70%;
+	border-radius: 15px; /*coin arrondi*/
+	margin-top: 10px;
+	margin-left: auto; 
+	margin-right: auto;
+
+	display: flex;
+	justify-content: space-around;
+	
+	color: white;
+	background-color: #4293f5;
+}
+
+#profil_element{
+	flex-basis: 50%;
+}
+
+.profil_element_contenu{
+	padding: .25em;
+	width: 100%;
+	background-color: #245691;
+	border-radius: 10px; /*coin arrondi*/
+}
+
+#profil_desc{
+	width: 100%;
+}
+
+/*VIDEOS*/
+
+.titre_interview {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+
+	color: white;
+	background-color: #4293f5;
+}
+
+.partie_interview {
+	background-color: #245691;
+}
+
+.partie_interview h1,h2,h3{
+	border-radius: 0; /*coin arrondi*/
+}
+
+video {
+	max-width: 100%;
+}
+
+#interviews_candidat{
+	display: flex;
+	justify-content: center;
+}
+
+.interviews_candidat_elements{
+	width: 33%;
+}
+
+#test100{
+	width: 73.60%;
+	background-color:#245691;
+	border-left: 5% solid #245691;
+}
+
+.test50 h3{
+	color: white;
+	background-color: #245691;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+.interviews_candidat_elements h3,
+.interviews_autre_elements h3 {
+	color: white;
+	background-color: #245691;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+#interviews_autre{
+	display: flex;
+	justify-content: center;
+}
+
+.interviews_autre_elements{
+	width: 49.5%;
+}
+
+/*=========NEW CONCOURS==========*/
+.plan{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#programme{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*=========EQUIPE==========*/
+#equipe{
+	display: flex;
+	justify-content: center;
+}
+
+#equipe div{
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+
+	color: white;
+	background-color: #4293f5;
+	border: 1px solid white; /*à changer maybe*/
+}
+
+#equipe div:hover { 
+	background-color: #245691;
+}
+
+/*=========================================================/
+/						TITRE SITE
+/=========================================================*/
+#banner {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 60px;
+	text-align: center;	
+	color: #245691;
+	background-color: white;
+	border-radius: 0; /*coin arrondi*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*=========================================================/
+/					MENU NAVIGATION
+/=========================================================*/
+
+/*Possibilité remplacer id liens page par nav directement?*/
+#liens_page { /*Menu de navigation*/
+	background-color: #4293f5;
+	text-align: center;
+	font-size: 25px; 
+	
+	position: -webkit-sticky;
+	position: sticky;
+	
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	z-index: 6;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*Elements du menu de navigation*/
+#liens_page a { 
+	padding: .25em;
+	color: white;
+	border: 1px solid #245691;
+	text-decoration: none;
+	flex-grow: 1; /*Pour que chaques elements remplissent/prennent une place égale*/
+}
+
+/*Couleur sombre quand souris dessus + page actuel*/
+#liens_page a:hover, #page_actuel { 
+	background-color: #245691;
+}
+
+/*=========================================================*/
+
+/*=========================================================/
+/					DIAPORAMA OLD CONCOUR
+/=========================================================*/
+.cadre-diapo{
+
+max-width:800px;
+min-height: 400px;
+max-height: 600px; 
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+
+    }
+    
+    
+.diapo {
+opacity: 0;
+position: absolute;
+left: 50%;
+transform: translate3d(-50%,-50%,0);
+top: 50%;
+transition: opacity 1s;
+width: 100%;
+max-width: 600px;
+
+    
+}
+    
+
+ button{
+    
+border: none;
+cursor: pointer
+    
+    }
+    
+.precedent,
+.suivant{
+
+color: silver;
+transition: color .4s linear;
+transform: translatey(-50%);
+top: 50%;
+padding: .5rem;
+font-size: 2rem;
+background: white;
+position: absolute
+
+    }
+
+.precedent{left:0}
+.suivant{right:0}
+    
+.precedent:hover,
+.suivant:hover{
+
+color: black
+
+}
+    
+.numeros{
+transition: background .4s linear;
+color: white;
+background: #7A5FFF
+    
+    }
+    
+.cadre-demo{
+
+display: flex;
+justify-content: center;
+
+}
+
+/*=========================================================*/
+
+/*FOoter*/
+
+.footer-basic {
+	padding:40px 0;
+	background-color: #4293f5;
+	color:white;
+  }
+  
+  .footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+	display: flex;
+    justify-content: center;
+  }
+  
+  .footer-basic li {
+	padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+	opacity:1;
+  }
+  
+  .footer-basic .social {
+	text-align:center;
+	padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+	opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+  }

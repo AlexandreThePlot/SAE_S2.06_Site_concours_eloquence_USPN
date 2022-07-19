@@ -1,0 +1,25 @@
+Vous trouverez sur ce drive le site Internet sous forme de dossier compressé zip.
+Il vous suffit de le télécharger et d'en extraire le contenu dans un répertoire et d'ouvrir n'importe quel fichier .html sur votre navigateur.
+De préférence, vous pouvez ouvrir page_accueil.html en premier (clic droit, ouvrir avec: votre navigateur)
+
+Assurez vous d'avoir les fichiers suivants dans votre répertoire:
+assets
+css
+page_accueil.html
+page_accueil_en.html
+page_description.html
+page_description_en.html
+page_old_concours.html
+page_old_concours_en.html
+page_new_concours.html
+page_new_concours_en.html
+page_inscription.html
+page_inscription_en.html
+page_equipe.html
+page_equipe_en.html
+
+
+Si le site ne s'affiche pas correctement ou/et est difficilement consultable, nous vous avons fourni une
+vidéo sans commentaires présentant l'interface et le contenu du site à travers une navigation sur les différentes pages.
+
+Nous vous souhaitons une bonne navigation.
